@@ -2,7 +2,7 @@
 
 ### Robotics & AI Engineer · MSc Robotic Systems Engineering @ RWTH Aachen
 
-I build robots that **perceive, learn, and act** — working at the intersection of computer vision, imitation learning, and real robot hardware. Currently a research assistant at WZL (RWTH Aachen), where I develop perception-to-motion pipelines and synthetic data generation systems.
+I develop software pipelines for robotics: computer vision systems, imitation learning policies, ROS 2 control stacks, and synthetic data generation. I work where perception meets motion — writing the code that makes robots understand and act on the world around them.
 
 ---
 
