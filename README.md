@@ -6,84 +6,73 @@ I develop software pipelines for robotics: **computer vision systems, imitation 
 
 ---
 
-## 🔭 Currently Working On
+## 🤖 Projects
 
-- **Cloth fold quality assessment** — EfficientNetB0 CV pipeline (classification + regression) @ WZL RWTH Aachen
-- **Synthetic data generation** — NVIDIA Isaac Sim + Omniverse USD assets for semantic segmentation
-- **SmolVLA fine-tuning** — language-conditioned robot control with camera + joint state inputs
-- **Mobile manipulator** — integrating delta base with omni wheels + SLAM + path planning
+### 🦾 Real-World Robotic Imitation Learning — LeRobot SO-100 Arm
+> Trained a robot arm to autonomously pick a specific colored cube from a group, based on a color instruction given by the user.
 
----
+Assembled and configured the SO-100 robot arm and used teleoperation to record 50 demonstration episodes. Trained and compared two imitation learning policies — **ACT** (behavior cloning baseline) and **SmolVLA** (language-conditioned, goal-conditioned control). SmolVLA achieved higher success rates due to multimodal representation and asynchronous inference.
 
-## 🤖 Featured Projects
+`Python` `LeRobot` `PyTorch` `HuggingFace` `Feetech SDK` `Weights & Biases`
 
-| Project | Description | Stack |
-|---|---|---|
-| [🦾 LeRobot SO-100 Imitation Learning](https://github.com/AnikethanTV/lerobot-so100-imitation) | Real-world imitation learning — robot picks colored cubes autonomously. ACT & SmolVLA policies. | Python · LeRobot · PyTorch · HuggingFace |
-| [🎮 ROS2 Kinova Teleoperation](https://github.com/AnikethanTV/ros2-kinova-teleop) | Sensor-driven teleoperation for 7-DOF arm. ESP8266 + MPU6050 IMU. Sim-to-real validated. | ROS 2 · MoveIt 2 · Gazebo · C++ |
-| [👕 T-Shirt Fold Quality CV](https://github.com/AnikethanTV/tshirt-fold-cv) | 5-class CNN classification + quality score regression. 80% accuracy on 2600 images. | Python · TensorFlow · EfficientNetB0 · OpenCV |
-| [🌐 Isaac Sim Synthetic Data](https://github.com/AnikethanTV/isaac-sim-synth-data) | Automated synthetic dataset generation pipeline. YAML-based config, batch rendering. | Python · Isaac Sim · USD · YAML |
-| [🔤 Transformer from Scratch](https://github.com/AnikethanTV/transformer-translation) | Transformer model built from scratch for machine translation. Attention mechanisms + seq2seq. | Python · PyTorch |
-| [📊 Robotic Arm ML Dynamics](https://github.com/AnikethanTV/robotic-arm-ml-dynamics) | Inverse dynamics of 7-DOF arm via regression, RBF, and k-means clustering. | Python · scikit-learn · scipy |
+🔗 [View Repository](#) *(coming soon)*
 
 ---
 
-## 🛠️ Tech Stack
+### 🎮 Sensor-Based Control of a 7-DOF Robot Arm — ROS 2
+> Built a real-time teleoperation pipeline that maps physical sensor inputs to control a Kinova robotic arm.
 
-**Robotics & Simulation**
-`ROS 2` `MoveIt 2` `Gazebo` `NVIDIA Isaac Sim` `RViz2` 
+Designed and prototyped a custom teleoperation device using ESP8266, MPU6050 IMU (Cartesian end-effector control), a rotary encoder (joint/gripper commands), and an IR sensor (dead-man switch). Implemented custom ROS 2 nodes and validated the pipeline in Gazebo simulation before deploying on a real Kinova arm — demonstrating full sim-to-real transfer.
 
-**AI & Machine Learning**
-`PyTorch` `TensorFlow` `LeRobot` `HuggingFace` `EfficientNet` `Transformers` `Open-CV`
+`Python` `C++` `ROS 2` `MoveIt 2` `Gazebo` `RViz2` `ESP8266` `Arduino`
 
-**Programming**
-`Python` `C++` `MATLAB` `Java` `Arduino (ESP8266)`
-
-**Tools & Systems**
-`Docker` `Git` `PLC (Ladder)` `SolidWorks` `Fusion 360` `AutoCAD` `ANSYS`
+🔗 [View Repository](#) *(coming soon)*
 
 ---
 
-## 📚 Education
+### 👕 T-Shirt Fold Quality Assessment — Computer Vision Pipeline
+> Automated quality assessment of T-shirt folding using deep learning — replacing manual inspection with a CV pipeline.
 
-- 🎓 **MSc Robotic Systems Engineering** — RWTH Aachen University, Germany *(2024–2026)*
-  - Robotics kinematics & dynamics, Control systems, Computer Vision, AI & ML, Motion planning
-- 🎓 **BEng Mechanical Engineering** — Dayananda Sagar College of Engineering (VTU) *(2017–2021)*
+Built an end-to-end pipeline using EfficientNetB0 with a frozen backbone and fine-tuned blocks 4–7. Implemented both a **5-class classification head** (bad → perfect) and a **regression head** predicting a continuous quality score (1.0–5.0). Achieved 80% classification accuracy and RMSE of 0.411 on held-out test data. Part of research work at WZL, RWTH Aachen.
 
----
+`Python` `TensorFlow` `EfficientNetB0` `OpenCV` `NumPy` `Matplotlib`
 
-## 💼 Experience
-
-- **Scientific Research Assistant** — WZL, RWTH Aachen *(Oct 2025 – Present)*
-  - Computer vision pipeline for cloth fold quality assessment
-  - Synthetic data generation with Isaac Sim
-- **Lead Maintenance Engineer** — Toyota Industries Engine India *(Jul 2022 – May 2024)*
-  - IoT-based coolant monitoring system, PLC programming, Kaizen improvement projects
-- **Mechanical Design Engineer** — Brahm Works Pvt. Ltd. *(Apr 2021 – Jul 2022)*
-  - EV design, CAD modelling, FMEA, product prototyping
+🔗 [View Repository](#) *(coming soon)*
 
 ---
 
-## 🏆 Achievements
+### 🌐 Synthetic Data Generation — NVIDIA Isaac Sim
+> Automated pipeline to generate labeled synthetic image datasets for training computer vision models — removing the need for manual data collection.
 
-- 🥇 4th Rank — Design Presentation, ASME Human-Powered Vehicle Challenge (2019)
-- 🥉 3rd Rank — Sprint Race, ASME HPVC (2020)
-- 🏅 Best Innovative Project Award — Dayananda Sagar College (2021)
-- 🥉 3rd Place — Quality Improvement Activity, Toyota Industries (2023)
+Built a YAML-driven pipeline that loads USD assemblies into Isaac Sim, prepares assets as independent parts, randomizes scene parameters, and batch renders labeled images (images + labels + metadata.yaml). Used for generating training data for semantic segmentation models at WZL, RWTH Aachen.
 
----
+`Python` `NVIDIA Isaac Sim` `Omniverse USD` `YAML`
 
-## 🌍 Languages
-
-`English (C1)` `German (A1)` `Kannada` `Hindi`
+🔗 [View Repository](#) *(coming soon)*
 
 ---
 
-## 📫 Connect with Me
+### 🔤 Transformer-Based Machine Translation — Built from Scratch
+> Implemented a Transformer model from scratch to understand and apply attention mechanisms for sequence-to-sequence language tasks.
+
+Built the full Transformer architecture in PyTorch including multi-head self-attention, positional encoding, encoder-decoder structure, and training optimizations. Trained for machine translation tasks.
+
+`Python` `PyTorch`
+
+🔗 [View Repository](#) *(coming soon)*
+
+---
+
+### 📊 Machine Learning on Robotic Arm Dynamics
+> Modeled the inverse dynamics of a 7-DOF robotic arm using classical ML techniques.
+
+Used regression and clustering to predict joint torques from motion data. Improved accuracy progressively using polynomial features, Radial Basis Functions (RBF), and k-means clustering. Validated using mean squared error across configurations.
+
+`Python` `scikit-learn` `scipy` `NumPy` `Matplotlib` `seaborn`
+
+🔗 [View Repository](#) *(coming soon)*
+
+---
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Anikethan_T_V-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/anikethan-t-v-a2a188173/)
 [![Email](https://img.shields.io/badge/Email-anikethan.thimmanahalli@rwth--aachen.de-D14836?style=flat&logo=gmail)](mailto:anikethan.thimmanahalli@rwthaachen.de)
-
----
-
-*"Bridging the gap between simulation and real hardware — one robot at a time."*
