@@ -1,8 +1,8 @@
-# Hi, I'm Anikethan T V 👋
+# Hi, I'm Anikethan 👋
 
-### Robotics & AI Engineer · MSc Robotic Systems Engineering @ RWTH Aachen
+### MSc Robotic Systems Engineering @ RWTH Aachen University, Germany
 
-I develop software pipelines for robotics: computer vision systems, imitation learning policies, ROS 2 control stacks, and synthetic data generation. I work where perception meets motion — writing the code that makes robots understand and act on the world around them.
+I develop software pipelines for robotics: **computer vision systems, imitation learning policies, ROS 2 control stacks, and synthetic data generation.** I work where perception meets motion — writing the code that makes robots understand and act on the world around them.
 
 ---
 
