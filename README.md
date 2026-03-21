@@ -21,7 +21,7 @@ I build robots that **perceive, learn, and act** — working at the intersection
 |---|---|---|
 | [🦾 LeRobot SO-100 Imitation Learning](https://github.com/AnikethanTV/lerobot-so100-imitation) | Real-world imitation learning — robot picks colored cubes autonomously. ACT & SmolVLA policies. | Python · LeRobot · PyTorch · HuggingFace |
 | [🎮 ROS2 Kinova Teleoperation](https://github.com/AnikethanTV/ros2-kinova-teleop) | Sensor-driven teleoperation for 7-DOF arm. ESP8266 + MPU6050 IMU. Sim-to-real validated. | ROS 2 · MoveIt 2 · Gazebo · C++ |
-| [👕 T-Shirt Fold Quality CV](https://github.com/AnikethanTV/tshirt-fold-cv) | 5-class CNN classification + quality score regression. 80% accuracy on 2600 images. | Python · TensorFlow · EfficientNetB0 |
+| [👕 T-Shirt Fold Quality CV](https://github.com/AnikethanTV/tshirt-fold-cv) | 5-class CNN classification + quality score regression. 80% accuracy on 2600 images. | Python · TensorFlow · EfficientNetB0 · OpenCV |
 | [🌐 Isaac Sim Synthetic Data](https://github.com/AnikethanTV/isaac-sim-synth-data) | Automated synthetic dataset generation pipeline. YAML-based config, batch rendering. | Python · Isaac Sim · USD · YAML |
 | [🔤 Transformer from Scratch](https://github.com/AnikethanTV/transformer-translation) | Transformer model built from scratch for machine translation. Attention mechanisms + seq2seq. | Python · PyTorch |
 | [📊 Robotic Arm ML Dynamics](https://github.com/AnikethanTV/robotic-arm-ml-dynamics) | Inverse dynamics of 7-DOF arm via regression, RBF, and k-means clustering. | Python · scikit-learn · scipy |
