@@ -31,10 +31,10 @@ I build robots that **perceive, learn, and act** — working at the intersection
 ## 🛠️ Tech Stack
 
 **Robotics & Simulation**
-`ROS 2` `MoveIt 2` `Gazebo` `NVIDIA Isaac Sim` `RViz2` `Kinova SDK`
+`ROS 2` `MoveIt 2` `Gazebo` `NVIDIA Isaac Sim` `RViz2` 
 
 **AI & Machine Learning**
-`PyTorch` `TensorFlow` `LeRobot` `HuggingFace` `EfficientNet` `Transformers`
+`PyTorch` `TensorFlow` `LeRobot` `HuggingFace` `EfficientNet` `Transformers` `Open-CV`
 
 **Programming**
 `Python` `C++` `MATLAB` `Java` `Arduino (ESP8266)`
