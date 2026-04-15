@@ -15,7 +15,18 @@ Assembled and configured the SO-100 robot arm and used teleoperation to record 5
 
 `Python` `LeRobot` `PyTorch` `HuggingFace` `Feetech SDK` `Weights & Biases`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/lerobot-so100-imitation-learning)
+
+---
+
+### 🤝 Bimanual T-Shirt Folding — Dual-Arm Franka Manipulation
+> Heuristic-based bimanual manipulation pipeline that folds a T-shirt using two Franka arms guided by 3D keypoint perception.
+
+Developed a full perception-to-execution pipeline for dual-arm T-shirt folding. Used a 3D camera for keypoint detection on garment geometry, converted detected keypoints into end-effector pose targets with task-specific offsets, and commanded coordinated bimanual trajectories with synchronized gripper actions via ROS 2 — bridging perception and real hardware execution.
+
+`Python` `ROS 2` `Franka` `3D Camera` `Point Cloud Processing` `MoveIt 2`
+
+🔗 [View Repository](https://github.com/anikethan-tv/bimanual-tshirt-folding)
 
 ---
 
@@ -26,7 +37,7 @@ Designed and prototyped a custom teleoperation device using ESP8266, MPU6050 IMU
 
 `Python` `C++` `ROS 2` `MoveIt 2` `Gazebo` `RViz2` `ESP8266` `Arduino`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/ros2-sensor-teleoperation)
 
 ---
 
@@ -37,7 +48,7 @@ Built an end-to-end pipeline using EfficientNetB0 with a frozen backbone and fin
 
 `Python` `TensorFlow` `EfficientNetB0` `OpenCV` `NumPy` `Matplotlib`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/tshirt-fold-quality-assessment)
 
 ---
 
@@ -48,7 +59,7 @@ Built a YAML-driven pipeline that loads USD assemblies into Isaac Sim, prepares 
 
 `Python` `NVIDIA Isaac Sim` `Omniverse USD` `YAML`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/isaac-sim-synthetic-data)
 
 ---
 
@@ -59,7 +70,7 @@ Built the full Transformer architecture in PyTorch including multi-head self-att
 
 `Python` `PyTorch`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/transformer-from-scratch)
 
 ---
 
@@ -70,7 +81,7 @@ Used regression and clustering to predict joint torques from motion data. Improv
 
 `Python` `scikit-learn` `scipy` `NumPy` `Matplotlib` `seaborn`
 
-🔗 [View Repository](#) *(coming soon)*
+🔗 [View Repository](https://github.com/anikethan-tv/robotic-arm-dynamics-ml)
 
 ---
 
